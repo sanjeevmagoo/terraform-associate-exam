@@ -16,6 +16,6 @@ resource "azurerm_resource_group" "example" {
 
 resource "azurerm_resource_group" "Hello-Terraform" {
   name     = "Hello-Terraform"
-  location = "West US" 
-  }
+  location = "West US"
+}
 
