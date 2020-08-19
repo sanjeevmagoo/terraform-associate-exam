@@ -7,7 +7,7 @@ terraform {
   backend "azurerm" {
     resource_group_name  = "cloud-shell-storage-centralindia"
     storage_account_name = "csg1003200049146824"
-    container_name       = "tfstate"
+    container_name       = "tstate"
     key                  = "terraform.tfstate"
   }
 }
