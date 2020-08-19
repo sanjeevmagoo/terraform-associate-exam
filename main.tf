@@ -2,6 +2,14 @@ terraform {
   required_version = ">= 0.12.20"
 }
 
+terraform {   
+ backend "azurerm" {     
+ storage_account_name  = "csg1003200049146824"     
+ container_name        = "tstate"     
+ key                   = "terraform.tfstate"   
+ } 
+}
+
 provider "azurerm" {
   # whilst the `version` attribute is optional, we recommend pinning to a given version of the Provider
   version = "=2.23.0"
