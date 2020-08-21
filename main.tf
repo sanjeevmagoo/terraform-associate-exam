@@ -2,6 +2,14 @@ terraform {
   required_version = ">= 0.12.20"
 }
 
+provider "aws" {
+ region = "us-east-1"
+}
+
+resource "random_integer" "rand" {
+min = 10000
+max = 99999
+}
 
 terraform {
   backend "azurerm" {
