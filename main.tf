@@ -45,5 +45,10 @@ resource "azurerm_resource_group" "example" {
 }
   
   output resource_name {
-    value = azurerm_resource_group.example.name
+    value = var.mylist[2]
+    }
+  
+  variable "mylist" {
+    type = list
+    value = [1.2.3.4]
     }
