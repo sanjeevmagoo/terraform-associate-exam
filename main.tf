@@ -3,12 +3,12 @@ terraform {
 }
 
 provider "aws" {
- region = "us-east-1"
+  region = "us-east-1"
 }
 
 resource "random_integer" "rand" {
-min = 10000
-max = 99999
+  min = 10000
+  max = 99999
 }
 
 terraform {
