@@ -11,6 +11,13 @@ resource "random_integer" "rand" {
   max = 99999
 }
 
+module "resource-group" {
+  source  = "sanjeevmagoo/resource-group/azurerm"
+  version = "0.1.0"
+  name = "RG-Using-Modules"
+  location = "East US"
+}
+
 terraform {
   backend "azurerm" {
     resource_group_name  = "cloud-shell-storage-centralindia"
