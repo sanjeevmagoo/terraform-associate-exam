@@ -50,5 +50,5 @@ resource "azurerm_resource_group" "example" {
   
   variable "mylist" {
     type = list
-    value = [1,2,3,4]
+    default = [1,2,3,4]
     }
