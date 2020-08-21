@@ -30,11 +30,14 @@ provider "azurerm" {
 resource "azurerm_resource_group" "example" {
   name     = "unique-name-${random_integer.rand.result}"
   location = "West Europe"
-}
-
-provisioner "local-exec" {
+  
+  provisioner "local-exec" {
     command = "echo ${azurerm_resource_group.example.name} >> rg.txt"
   }
+  
+}
+
+
   
 resource "azurerm_resource_group" "Hello-Terraform" {
   name     = "Hello-Terraform"
