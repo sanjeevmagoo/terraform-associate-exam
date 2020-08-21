@@ -28,8 +28,9 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "example"
+  name     = "unique-name-${random_integer.rand.result}"
   location = "West Europe"
+  count ="2"
 }
 
 
