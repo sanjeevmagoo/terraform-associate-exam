@@ -52,3 +52,8 @@ resource "azurerm_resource_group" "example" {
     type = list
     default = [1,2,3,4]
     }
+
+  resource "azurerm_resource_group" "DomainServer" {
+  name     = "DomainServer"
+  location = "West Europe"
+  }
