@@ -55,5 +55,5 @@ resource "azurerm_resource_group" "example" {
 
   resource "azurerm_resource_group" "DomainServer" {
   name     = "DomainServer"
-  location = "West Europe"
+  location = "East Us"
   }
